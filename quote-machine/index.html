@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Random Quote Machine</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    .animate {
+      transition: all .8s ease;
+    }
+    .animate {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card mt-5">
+            <div class="card-body">
+              <div class="card-text">
+                <p v-bind:class="{animate: animating}">"{{ currentQuote }}"</p>
+                <p>- Bob Ross</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3 d-flex justify-content-center">
+          <button @click="newQuote" class="btn btn-primary mt-2">
+            New Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="quotes.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
