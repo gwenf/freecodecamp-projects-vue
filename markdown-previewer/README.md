@@ -5,4 +5,4 @@ This is [freeCodeCamp's markdown previewer project](https://www.freecodecamp.org
 ## Tech Stack
 
 * Vue.js
-* Inkline
+* [Inkline](https://inkline.io/)
