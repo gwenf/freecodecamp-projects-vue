@@ -1,0 +1,38 @@
+body {
+  background: lightblue;
+  padding: 0px;
+  margin: 0px;
+}
+
+span {
+  quotes: "“" "”" "‘" "’";  
+  font-family: sans-seif;
+}
+
+span::before {
+  content: open-quote;
+  font-size: 52px;
+  vertical-align: -1.2rem;
+  line-height: 0.4;
+  font-family: sans-serif;
+}
+
+button{
+  padding: 0px 8px 0px 6px;
+  height: 35px;
+}
+.animate {
+  transition: all .8s ease;
+}
+.animate {
+  transform: translateX(10px);
+  color: red;
+}
+
+#app{
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content : center;
+}
