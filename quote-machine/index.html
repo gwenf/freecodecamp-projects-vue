@@ -14,7 +14,7 @@
           <div class="card mt-5">
             <div class="card-body">
               <div class="card-text">
-                <p v-bind:class="{animate: animating}">"{{ currentQuote }}"</p>
+                <p v-bind:class="{animate: animating}" :disabled="animating">"{{ currentQuote }}"</p>
                 <p>- Bob Ross</p>
               </div>
             </div>

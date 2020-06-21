@@ -1,20 +1,18 @@
 new Vue({
-  el: '#app',
+  el: "#app",
   data: {
     quotes,
     currentQuote: quotes[0],
-    animating: false
+    animating: false,
   },
   methods: {
-    newQuote: function() {
+    newQuote: function () {
       const num = Math.floor(Math.random() * quotes.length)
       this.currentQuote = quotes[num]
-    }
+      this.animating = true
+      setTimeout(() => {
+        this.animating = false
+      }, 1000)
+    },
   },
-  updated: function() {
-    this.animating = true
-    setTimeout(() => {
-      this.animating = false
-    }, 1000)
-  }
 })

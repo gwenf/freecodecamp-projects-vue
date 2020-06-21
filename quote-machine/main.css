@@ -21,13 +21,6 @@ button{
   padding: 0px 8px 0px 6px;
   height: 35px;
 }
-.animate {
-  transition: all .8s ease;
-}
-.animate {
-  transform: translateX(10px);
-  color: red;
-}
 
 #app{
   display:flex;
@@ -35,4 +28,49 @@ button{
   height: 100vh;
   align-items: center;
   justify-content : center;
+}
+
+/*
+Quote Animations
+*/
+.card-text p:nth-child(1){
+  transform: translateX(10px);
+}
+
+.animate {
+  animation: fadeInTranslateX ease 1s;
+  -webkit-animation: fadeInTranslateX ease 1s;
+  -moz-animation: fadeInTranslateX ease 1s;
+  -o-animation: fadeInTranslateX ease 1s;
+  -ms-animation: fadeInTranslateX ease 1s;
+}
+
+@keyframes fadeInTranslateX {
+ 0% {opacity:0;transform: translateX(-5px);}
+ 100% {opacity:1;      transform: translateX(10px);
+ }
+}
+
+@-moz-keyframes fadeInTranslateX {
+ 0% {opacity:0;transform: translateX(-5px);}
+ 100% {opacity:1;      transform: translateX(10px);
+ }
+}
+
+@-webkit-keyframes fadeInTranslateX {
+ 0% {opacity:0;transform: translateX(-5px);}
+ 100% {opacity:1;      transform: translateX(10px);
+ }
+}
+
+@-o-keyframes fadeInTranslateX {
+ 0% {opacity:0;transform: translateX(-5px);}
+ 100% {opacity:1;      transform: translateX(10px);
+ }
+}
+
+@-ms-keyframes fadeInTranslateX {
+ 0% {opacity:0;transform: translateX(-5px);}
+ 100% {opacity:1;      transform: translateX(10px);
+ }
 }
