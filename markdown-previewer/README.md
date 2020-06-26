@@ -5,4 +5,9 @@ This is [freeCodeCamp's markdown previewer project](https://www.freecodecamp.org
 ## Tech Stack
 
 * Vue.js
-* [Inkline](https://inkline.io/)
+* Vue CLI
+* [Inkline Design Framework](https://inkline.io/)
+
+## Mockups
+
+<img src="mockups/markdown_previewer.png">
