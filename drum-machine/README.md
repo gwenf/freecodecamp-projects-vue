@@ -5,4 +5,9 @@ This is [freeCodeCamp's Drum Machine Project](https://www.freecodecamp.org/learn
 ## Tech Stack
 
 * Vue.js
+* Vue CLI
 * [Inkline](https://inkline.io/)
+
+## Mockups
+
+<img src="mockups/drum_machine.png">
