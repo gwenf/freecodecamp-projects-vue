@@ -11,7 +11,7 @@
               <b-form-checkbox v-model="isOn" @change="powerChange" switch size="lg">
                 Power
               </b-form-checkbox>
-              <b-button class="py-0" @click="stop" variant="outline-info">
+              <b-button @click="stop" variant="outline-info">
                 Stop
               </b-button>
               <div class="border rounded-lg px-4 py-2">
