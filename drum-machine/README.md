@@ -8,7 +8,7 @@ This is [freeCodeCamp's Drum Machine Project](https://www.freecodecamp.org/learn
 
 * Vue.js
 * Vue CLI
-* [Inkline](https://inkline.io/)
+* [Bootstrap Vue](https://bootstrap-vue.org/)
 
 ## Mockups
 
