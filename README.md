@@ -8,4 +8,5 @@ Building all the freeCodeCamp projects in Vue.js.
 * [Markdown Previewer](markdown-previewer/README.md)
 * [Drum Machine](drum-machine/README.md)
 * [Calculator](calculator/README.md)
+* [Pomodoro Clock](pomodor-clock/README.md)
 
