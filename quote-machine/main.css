@@ -33,7 +33,7 @@ button{
 /*
 Quote Animations
 */
-.card-text p:nth-child(1){
+.card-text p {
   transform: translateX(10px);
 }
 
