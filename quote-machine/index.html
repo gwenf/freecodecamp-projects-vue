@@ -8,14 +8,14 @@
 </head>
 <body>
   <div id="app">
-    <div class="container">
+    <div id="quote-box" class="container">
       <div class="row">
         <div class="col-sm-6 offset-sm-3">
           <div class="card mt-5">
             <div class="card-body">
               <div class="card-text">
-                <p v-bind:class="{animate: animating}" :disabled="animating">"{{ currentQuote }}"</p>
-                <p v-bind:class="{animate: animating}" :disabled="animating">- {{ currentQuoteAuthor }}</p>
+                <q id="text" v-bind:class="{animate: animating}" :disabled="animating">{{ currentQuote }}</q>
+                <p id="author" v-bind:class="{animate: animating}" :disabled="animating">- {{ currentQuoteAuthor }}</p>
               </div>
             </div>
           </div>
@@ -23,9 +23,14 @@
       </div>
       <div class="row">
         <div class="col-sm-6 offset-sm-3 d-flex justify-content-center">
-          <button @click="newQuote" class="mt-2">
+          <button id="new-quote" @click="newQuote()" class="btn btn-primary btn-block mt-2">
            <span/>New Quote
           </button>
+        </div>
+        <div class="col-sm-6 offset-sm-3 d-flex justify-content-center">
+          <a id="tweet-quote" :href='`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${currentQuote}"%20${currentQuoteAuthor}`' target="_blank" type="button" class="btn btn-secondary btn-block">
+            Tweet Quote
+          </a>
         </div>
       </div>
     </div>
