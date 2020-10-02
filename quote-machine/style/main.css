@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  /* background: url('./wave.svg');
+  /* background: url('./image/wave.svg');
   background-repeat: no-repeat;
   background-clip: content-box; */
   padding: 0px;
@@ -45,7 +45,7 @@ button {
   position: absolute;
   top: 0%;
   left: 0%;
-  cursor: url('./sad.png'), auto !important;
+  cursor: url('../image/sad.png'), auto !important;
 }
 
 #quote_background {
@@ -60,7 +60,7 @@ button {
   width: 70%;
   height: 50%;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* border: 2px solid red; */
@@ -85,9 +85,17 @@ footer {
   position: absolute;
   bottom: 0%;
   right: 6%;
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
   color: #ffffff;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+}
+footer a:hover {
+  color: #ffffff;
+  font-size: 2.2rem;
 }
 
 /*
