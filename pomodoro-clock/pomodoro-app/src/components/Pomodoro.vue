@@ -125,6 +125,7 @@ export default {
       this.timers = this.timers.map((timer, i) => {
         return { ...timer, minutes: parseInt(updatedTimers[i]) }
       })
+	  this.totalSeconds = this.timers[this.currentTimer].minutes * 60;
       this.closeDialog()
     }
   }
